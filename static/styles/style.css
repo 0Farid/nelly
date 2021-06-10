@@ -142,7 +142,7 @@ body {
           box-shadow: 0 0rem 3rem #021092;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   body {
     padding-left: 5em;
     padding-right: 5em;
