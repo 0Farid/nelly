@@ -1,0 +1,184 @@
+
+body{
+    background:rgb(30, 31, 36);
+    padding-top:0.5em;
+    padding-left:.5em;
+    padding-right: .5em;
+    font-family: 'Lexend';
+    color:white;
+    overflow:hidden;
+}
+
+.navbar{
+    .navbar-brand{
+        color:white;
+        font-weight: bold;
+        &:hover{
+            color:white;
+        }
+    }
+
+    .nav-item{
+        margin:0.3em;
+        padding:0.15em;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .nav-link.active{
+        color:rgb(255, 255, 255);
+    }
+    .nav-link{
+        color:rgb(173, 173, 173);
+        transition: 0.3s;
+
+        &:hover{
+            color:rgb(255, 255, 255);
+        }
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+    .get-started{
+        margin-left:0px;
+        background: #005FFF;
+        width: 100%;
+        padding-top:0.5em;
+        padding-bottom:0.5em;
+        color:white;
+        box-sizing: border-box;
+        font-size:0.95em;
+        border: none;
+        box-shadow:0 0rem 1rem #4154f1;
+        transition:0.3s ease;
+        
+        &:hover{
+            transform: scale(1.05);
+        }
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+    
+}
+.main-discord{
+    .container-discord{
+        position: absolute;
+        z-index: -100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p{
+            color:white;
+            a{
+                color:white;
+            }
+        }
+    }
+}
+.main{
+    padding-top:10em;
+    .statement{
+        font-family:monospace;
+        font-weight: bolder;   
+        font-size:2.5rem;
+    }
+    .description{
+        width:300px;
+    }
+    .image{
+        position: absolute;
+        z-index: -100;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    .get-in-touch{
+        text-decoration: none;
+        color:white;
+        padding:0.6em;
+        background: #005FFF;
+        box-shadow:0 0rem 1rem #4154f1;
+        border-radius: 5px;
+        transition:box-shadow 0.1s ease-in,background 0.1s ;
+        
+        &:hover{
+            box-shadow:0 0rem 2rem #005FFF;
+        }
+        &:active{
+            background: #0049c7;
+            box-shadow:0 0rem 3rem rgb(2, 16, 146);
+        }
+    }
+}
+@media screen and (min-width: 1100px) {
+    body{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .navbar{
+
+        .get-started{
+            margin-left:25px;
+            background: #005FFF;
+            padding-left:1.3rem !important;
+            padding-right:1.3rem !important;
+
+            color:white;
+            box-sizing: border-box;
+            font-size:0.95em;
+            border: none;
+            box-shadow:0 0rem 1rem #4154f1;
+            transition:0.3s ease;
+            border-bottom-left-radius:15px !important;
+            border-top-right-radius:15px !important;
+            
+            &:hover{
+                transform: scale(1.05);
+            }
+            &:active{
+                transform: scale(0.9);
+            }
+        }
+        .nav-item{
+            padding:0;
+            border: none;
+        }
+    }
+    .main{
+        padding-top:10em;
+        .statement{
+            font-family:monospace;
+            font-weight: bolder;   
+        }
+        .description{
+            width:300px;
+        }
+        .image{
+            position: absolute;
+            z-index: 0;
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+            opacity:1;
+        }
+        .get-in-touch{
+            text-decoration: none;
+            color:white;
+            padding:0.6em;
+            background: #005FFF;
+            box-shadow:0 0rem 1rem #4154f1;
+            border-radius: 5px;
+            transition:box-shadow 0.1s ease-in,background 0.1s ;
+            
+            &:hover{
+                box-shadow:0 0rem 2rem #005FFF;
+            }
+            &:active{
+                background: #0049c7;
+                box-shadow:0 0rem 3rem rgb(2, 16, 146);
+            }
+        }
+    }
+}
